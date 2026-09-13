@@ -162,16 +162,12 @@ void atualizar_id(lista_dupla *lista, int id){
 
     while (atual != NULL){
         if (atual->produto.id == id){
-            int nova_quantidade;
-            printf("Nova quantidade: ");
-            scanf("%d", &nova_quantidade);
-
-            atualizar_quantidade(&atual->produto, nova_quantidade);
+            atualizar_quantidade(&atual->produto);
             return;
         }
         atual = atual->proximo;
     }
-    printf("Produto nao encontrado!\n");
+    printf("Produto nao encontrado!!\n");
 }
 void esvaziar_lista(lista_dupla *lista){
     No *atual = lista->inicio;

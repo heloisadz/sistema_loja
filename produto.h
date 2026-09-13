@@ -11,6 +11,6 @@ typedef struct {
 
 void cadastrar_produto(Produto *produto);
 void exibir_produto(Produto produto);
-void atualizar_quantidade(Produto *produto, int nova_quantidade);
+void atualizar_quantidade(Produto *produto);
 
 #endif

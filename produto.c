@@ -27,7 +27,11 @@ void exibir_produto(Produto produto){
     printf("Preco: %.2f\n", produto.preco);
     printf("Validade: %s\n", produto.validade);
 }
-void atualizar_quantidade(Produto *produto, int nova_quantidade)
-{
-    produto->quantidade = nova_quantidade;
+void atualizar_quantidade(Produto *produto){
+    printf("Quantidade atual: %d\n", produto->quantidade);
+
+    printf("Nova quantidade: ");
+    scanf("%d", &produto->quantidade);
+
+    printf("Quantidade atualizada!!\n");
 }
