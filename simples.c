@@ -9,13 +9,13 @@ void inserir_inicio_simples(NoSimples **lista, Produto produto)
 
     if (novo == NULL)
     {
-        printf("Erro: falha de alocacao de memoria.\n");
+        printf("Erro: falha de alocacao de memoria!\n");
         return;
     }else{
     novo->produto = produto;
     novo->proximo = *lista;
     *lista = novo;
-     printf("Produto inserido no inicio.\n");
+     printf("Produto inserido no inicio!\n");
     }
 }
 
@@ -25,7 +25,7 @@ void inserir_fim_simples(NoSimples **lista, Produto produto)
 
     if (novo == NULL)
     {
-        printf("Erro: falha de alocacao de memoria.\n");
+        printf("Erro: falha de alocacao de memoria!\n");
         return;
     }else{
 
@@ -48,7 +48,7 @@ void inserir_fim_simples(NoSimples **lista, Produto produto)
         temp->proximo = novo;
     }
 
-    printf("Produto inserido no fim.\n");
+    printf("Produto inserido no fim!\n");
     }
 }
 
@@ -56,7 +56,7 @@ void remover_inicio_simples(NoSimples **lista)
 {
     if (*lista == NULL)
     {
-        printf("Lista vazia.\n");
+        printf("Lista vazia!\n");
         return;
     }
 
@@ -65,14 +65,14 @@ void remover_inicio_simples(NoSimples **lista)
 
     free(temp);
 
-    printf("Produto removido do inicio.\n");
+    printf("Produto removido do inicio!\n");
 }
 
 void remover_fim_simples(NoSimples **lista)
 {
     if (*lista == NULL)
     {
-        printf("Lista vazia.\n");
+        printf("Lista vazia!\n");
         return;
     }
 
@@ -80,7 +80,7 @@ void remover_fim_simples(NoSimples **lista)
     {
         free(*lista);
         *lista = NULL;
-        printf("Produto removido do fim.\n");
+        printf("Produto removido do fim!\n");
         return;
     }
 
@@ -94,14 +94,14 @@ void remover_fim_simples(NoSimples **lista)
     free(temp->proximo);
     temp->proximo = NULL;
 
-    printf("Produto removido do fim.\n");
+    printf("Produto removido do fim!\n");
 }
 
 void remover_id_simples(NoSimples **lista, int id)
 {
     if (*lista == NULL)
     {
-        printf("Lista vazia.\n");
+        printf("Lista vazia!\n");
         return;
     }
 
@@ -111,7 +111,7 @@ void remover_id_simples(NoSimples **lista, int id)
         *lista = remover->proximo;
         free(remover);
 
-        printf("Produto removido.\n");
+        printf("Produto removido!\n");
         return;
     }
 
@@ -127,14 +127,14 @@ void remover_id_simples(NoSimples **lista, int id)
 
             free(remover);
 
-            printf("Produto removido.\n");
+            printf("Produto removido!\n");
             return;
         }
 
         atual = atual->proximo;
     }
 
-    printf("ID inexistente.\n");
+    printf("ID inexistente!\n");
 }
 
 void buscar_nome_simples(NoSimples *lista, const char *nome)
@@ -153,7 +153,7 @@ void buscar_nome_simples(NoSimples *lista, const char *nome)
     }
 
     if (!encontrou)
-        printf("Nenhum produto encontrado.\n");
+        printf("Nenhum produto encontrado!\n");
 }
 
 void atualizar_simples(NoSimples *lista, int id)
@@ -169,14 +169,14 @@ void atualizar_simples(NoSimples *lista, int id)
         lista = lista->proximo;
     }
 
-    printf("ID inexistente.\n");
+    printf("ID inexistente!\n");
 }
 
 void exibir_simples(NoSimples *lista)
 {
     if (lista == NULL)
     {
-        printf("Lista vazia.\n");
+        printf("Lista vazia!\n");
         printf("---------------------------\n");
         return;
     }

@@ -36,7 +36,7 @@ void menu_dupla(lista_dupla *lista){
                cadastrar_produto(&produto);
                inserir_inicio(lista, produto);
                printf("---------------------------\n");
-               printf("Produto inserido!!\n");
+               printf("Produto inserido!\n");
                printf("---------------------------\n");
                 break;
             }
@@ -46,21 +46,21 @@ void menu_dupla(lista_dupla *lista){
                 cadastrar_produto(&produto);
                 inserir_fim(lista, produto);
                 printf("---------------------------\n");
-                printf("Produto inserido!!\n");
+                printf("Produto inserido!\n");
                 printf("---------------------------\n");
                 break;
             }
             case 3:{
                 remover_inicio(lista);
                 printf("---------------------------\n");
-                printf("Produto removido!!\n");
+                printf("Produto removido!\n");
                 printf("---------------------------\n");
                 break;
             }
             case 4:{
                 remover_fim(lista);
                 printf("---------------------------\n");
-                printf("Produto removido!!\n");
+                printf("Produto removido!\n");
                 printf("---------------------------\n");
                 break;
             }
@@ -71,7 +71,7 @@ void menu_dupla(lista_dupla *lista){
 
                 remover_id(lista, id);
                 printf("---------------------------\n");
-                printf("Produto removido!!\n");
+                printf("Produto removido!\n");
                 printf("---------------------------\n");
                 break;
             }    
@@ -93,19 +93,19 @@ void menu_dupla(lista_dupla *lista){
                 printf("\n");
                 atualizar_id(lista, id);
                 printf("---------------------------\n");
-                printf("Quantidade alterada!!\n");
+                printf("Quantidade alterada!\n");
                 printf("---------------------------\n");
                 break;
             }    
             case 8:{
                 exibir_lista(lista);
-                printf("Fim da listagem!!\n");
+                printf("Fim da listagem!\n");
                 printf("---------------------------\n");
                 break;
             }    
             case 9:{
                 exibir_reverso(lista);
-                printf("Fim da listagem!!\n");
+                printf("Fim da listagem!\n");
                 printf("---------------------------\n");
                 break;
             }    
@@ -116,7 +116,7 @@ void menu_dupla(lista_dupla *lista){
             }    
             case 11:{
                 esvaziar_lista(lista);
-                printf("Lista esvaziada!!\n");
+                printf("Lista esvaziada!\n");
                 printf("---------------------------\n");
                 break;
             }    
@@ -163,7 +163,7 @@ void menu_simples(NoSimples **lista){
                 cadastrar_produto(&produto);
                 inserir_inicio_simples(lista, produto);
                 printf("---------------------------\n");
-                printf("Produto inserido!!\n");
+                printf("Produto inserido!\n");
                 printf("---------------------------\n");
                 break;
             }
@@ -173,21 +173,21 @@ void menu_simples(NoSimples **lista){
                 cadastrar_produto(&produto);
                 inserir_fim_simples(lista, produto);
                 printf("---------------------------\n");
-                printf("Produto inserido!!\n");
+                printf("Produto inserido!\n");
                 printf("---------------------------\n");
                 break;
             }
             case 3:{
                 remover_inicio_simples(lista);
                 printf("---------------------------\n");
-                printf("Produto removido!!\n");
+                printf("Produto removido!\n");
                 printf("---------------------------\n");
                 break;
             }
             case 4:{
                 remover_fim_simples(lista);
                 printf("---------------------------\n");
-                printf("Produto removido!!\n");
+                printf("Produto removido!\n");
                 printf("---------------------------\n");
                 break;
             }
@@ -199,7 +199,7 @@ void menu_simples(NoSimples **lista){
 
                 remover_id_simples(lista, id);
                 printf("---------------------------\n");
-                printf("Produto removido!!\n");
+                printf("Produto removido!\n");
                 printf("---------------------------\n");
                 break;
             }
@@ -222,13 +222,13 @@ void menu_simples(NoSimples **lista){
 
                 atualizar_simples(*lista, id);
                 printf("---------------------------\n");
-                printf("Quantidade alterada!!\n");
+                printf("Quantidade alterada!\n");
                 printf("---------------------------\n");
                 break;
             }
             case 8:{
                 exibir_simples(*lista);
-                printf("Fim da listagem!!\n");
+                printf("Fim da listagem!\n");
                 printf("---------------------------\n");
                 break;
             }
@@ -241,7 +241,7 @@ void menu_simples(NoSimples **lista){
             case 10:{
                 esvaziar_simples(lista);
                 printf("Lista esvaziada!\n");
-                printf("Lista esvaziada!!\n");
+                printf("Lista esvaziada!\n");
                 printf("---------------------------\n");
                 break;
             }
