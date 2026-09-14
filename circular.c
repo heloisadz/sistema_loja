@@ -191,7 +191,7 @@ int contar_produtos(Lista_circular *lista){
     }
 };
 
-void atualizacao_qtd(Lista_circular *lista, int idt, int nova_qtd){
+void atualizacao_qtd(Lista_circular *lista, int idt){
     if(!estaVazia(lista)){
         No_circular *aux = lista->inicio;
         do{

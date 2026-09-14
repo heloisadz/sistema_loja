@@ -26,7 +26,7 @@ void buscar_por_nome(Lista_circular *lista, char texto[]);
     
 int contar_produtos(Lista_circular *lista);
 
-void atualizacao_qtd(Lista_circular *lista, int idt, int nova_qtd);
+void atualizacao_qtd(Lista_circular *lista, int idt);
 
 void exibir(Lista_circular *lista);
 
