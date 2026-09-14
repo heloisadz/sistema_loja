@@ -1,0 +1,12 @@
+CC = gcc
+CFLAGS = -Wall -Wextra
+
+PROGRAMA = estoque
+
+ARQUIVOS = main.c produto.c simples.c dupla.c circular.c
+
+all:
+$(CC) $(CFLAGS) $(ARQUIVOS) -o $(PROGRAMA)
+
+clean:
+rm -f $(PROGRAMA)
