@@ -35,8 +35,7 @@ void menu_dupla(lista_dupla *lista){
 
                cadastrar_produto(&produto);
                inserir_inicio(lista, produto);
-               printf("---------------------------\n");
-               printf("Produto inserido!\n");
+               
                printf("---------------------------\n");
                 break;
             }
@@ -45,22 +44,19 @@ void menu_dupla(lista_dupla *lista){
 
                 cadastrar_produto(&produto);
                 inserir_fim(lista, produto);
-                printf("---------------------------\n");
-                printf("Produto inserido!\n");
+                
                 printf("---------------------------\n");
                 break;
             }
             case 3:{
                 remover_inicio(lista);
-                printf("---------------------------\n");
-                printf("Produto removido!\n");
+                
                 printf("---------------------------\n");
                 break;
             }
             case 4:{
                 remover_fim(lista);
-                printf("---------------------------\n");
-                printf("Produto removido!\n");
+                
                 printf("---------------------------\n");
                 break;
             }
@@ -70,8 +66,7 @@ void menu_dupla(lista_dupla *lista){
                 scanf("%d", &id);
 
                 remover_id(lista, id);
-                printf("---------------------------\n");
-                printf("Produto removido!\n");
+                
                 printf("---------------------------\n");
                 break;
             }    
@@ -92,8 +87,7 @@ void menu_dupla(lista_dupla *lista){
                 scanf("%d", &id);
                 printf("\n");
                 atualizar_id(lista, id);
-                printf("---------------------------\n");
-                printf("Quantidade alterada!\n");
+                
                 printf("---------------------------\n");
                 break;
             }    
@@ -162,8 +156,7 @@ void menu_simples(NoSimples **lista){
 
                 cadastrar_produto(&produto);
                 inserir_inicio_simples(lista, produto);
-                printf("---------------------------\n");
-                printf("Produto inserido!\n");
+                
                 printf("---------------------------\n");
                 break;
             }
@@ -172,22 +165,19 @@ void menu_simples(NoSimples **lista){
 
                 cadastrar_produto(&produto);
                 inserir_fim_simples(lista, produto);
-                printf("---------------------------\n");
-                printf("Produto inserido!\n");
+                
                 printf("---------------------------\n");
                 break;
             }
             case 3:{
                 remover_inicio_simples(lista);
-                printf("---------------------------\n");
-                printf("Produto removido!\n");
+                
                 printf("---------------------------\n");
                 break;
             }
             case 4:{
                 remover_fim_simples(lista);
-                printf("---------------------------\n");
-                printf("Produto removido!\n");
+                
                 printf("---------------------------\n");
                 break;
             }
@@ -198,8 +188,7 @@ void menu_simples(NoSimples **lista){
                 scanf("%d", &id);
 
                 remover_id_simples(lista, id);
-                printf("---------------------------\n");
-                printf("Produto removido!\n");
+                
                 printf("---------------------------\n");
                 break;
             }
@@ -265,8 +254,7 @@ int main()
 
     int opcao;
 
-    do
-    {
+    do{
         printf("\n===== ESTOQUE DA LOJA =====\n");
         printf("1. Gerenciar Pereciveis (Simples)\n");
         printf("2. Gerenciar Nao Pereciveis (Dupla)\n");

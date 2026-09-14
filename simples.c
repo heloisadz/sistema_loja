@@ -9,12 +9,14 @@ void inserir_inicio_simples(NoSimples **lista, Produto produto)
 
     if (novo == NULL)
     {
+        printf("---------------------------\n");
         printf("Erro: falha de alocacao de memoria!\n");
         return;
     }else{
     novo->produto = produto;
     novo->proximo = *lista;
     *lista = novo;
+    printf("---------------------------\n");
      printf("Produto inserido no inicio!\n");
     }
 }
@@ -25,6 +27,7 @@ void inserir_fim_simples(NoSimples **lista, Produto produto)
 
     if (novo == NULL)
     {
+        printf("---------------------------\n");
         printf("Erro: falha de alocacao de memoria!\n");
         return;
     }else{
@@ -47,7 +50,7 @@ void inserir_fim_simples(NoSimples **lista, Produto produto)
 
         temp->proximo = novo;
     }
-
+    printf("---------------------------\n");
     printf("Produto inserido no fim!\n");
     }
 }
@@ -64,7 +67,7 @@ void remover_inicio_simples(NoSimples **lista)
     *lista = temp->proximo;
 
     free(temp);
-
+    
     printf("Produto removido do inicio!\n");
 }
 
@@ -72,6 +75,7 @@ void remover_fim_simples(NoSimples **lista)
 {
     if (*lista == NULL)
     {
+        printf("---------------------------\n");
         printf("Lista vazia!\n");
         return;
     }
@@ -80,6 +84,7 @@ void remover_fim_simples(NoSimples **lista)
     {
         free(*lista);
         *lista = NULL;
+        printf("---------------------------\n");
         printf("Produto removido do fim!\n");
         return;
     }
@@ -93,7 +98,7 @@ void remover_fim_simples(NoSimples **lista)
 
     free(temp->proximo);
     temp->proximo = NULL;
-
+    printf("---------------------------\n");
     printf("Produto removido do fim!\n");
 }
 
@@ -101,6 +106,7 @@ void remover_id_simples(NoSimples **lista, int id)
 {
     if (*lista == NULL)
     {
+        printf("---------------------------\n");
         printf("Lista vazia!\n");
         return;
     }
@@ -110,7 +116,7 @@ void remover_id_simples(NoSimples **lista, int id)
         NoSimples *remover = *lista;
         *lista = remover->proximo;
         free(remover);
-
+        printf("---------------------------\n");
         printf("Produto removido!\n");
         return;
     }
@@ -126,14 +132,14 @@ void remover_id_simples(NoSimples **lista, int id)
             atual->proximo = remover->proximo;
 
             free(remover);
-
+            printf("---------------------------\n");
             printf("Produto removido!\n");
             return;
         }
 
         atual = atual->proximo;
     }
-
+    printf("---------------------------\n");
     printf("ID inexistente!\n");
 }
 

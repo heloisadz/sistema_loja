@@ -26,6 +26,8 @@ void inserir_inicio(lista_dupla *lista, Produto produto){
         lista->inicio->anterior = novo;
         lista->inicio = novo;
     }
+    printf("---------------------------\n");
+    printf("Produto inserido!\n");
 }
 
 void inserir_fim(lista_dupla *lista, Produto produto){
@@ -47,7 +49,8 @@ void inserir_fim(lista_dupla *lista, Produto produto){
         lista->fim->proximo = novo;
         lista->fim = novo;
     }
-
+    printf("---------------------------\n");
+    printf("Produto inserido!\n");
 }
 void exibir_lista(lista_dupla *lista){
     No *atual = lista->inicio;
@@ -88,7 +91,7 @@ int contar_lista(lista_dupla *lista){
 }
 void remover_inicio(lista_dupla *lista){
     if (lista->inicio == NULL){
-        printf("Lista ja esta vazia.\n");
+        printf("Lista vazia!\n");
         return;
     }
     No *removido = lista->inicio;
@@ -101,6 +104,8 @@ void remover_inicio(lista_dupla *lista){
         lista->inicio->anterior = NULL;
     }
     free(removido);
+    printf("---------------------------\n");
+    printf("Produto removido!\n");
 }
 void remover_fim(lista_dupla *lista){
     if (lista->fim == NULL){
@@ -117,6 +122,8 @@ void remover_fim(lista_dupla *lista){
         lista->fim->proximo = NULL;
     }
     free(removido);
+    printf("---------------------------\n");
+    printf("Produto removido!\n");
 }
 void remover_id(lista_dupla *lista, int id){
     No *atual = lista->inicio;
@@ -125,6 +132,7 @@ void remover_id(lista_dupla *lista, int id){
         atual = atual->proximo;
     }
     if (atual == NULL){
+        printf("---------------------------\n");
         printf("Produto nao encontrado!\n");
         return;
     }
@@ -140,6 +148,8 @@ void remover_id(lista_dupla *lista, int id){
     atual->proximo->anterior = atual->anterior;
 
     free(atual);
+    printf("---------------------------\n");
+    printf("Produto removido!\n");
 }
 void buscar_nome(lista_dupla *lista, char nome[]){
     No *atual = lista->inicio;
@@ -163,11 +173,14 @@ void atualizar_id(lista_dupla *lista, int id){
     while (atual != NULL){
         if (atual->produto.id == id){
             atualizar_quantidade(&atual->produto);
+            printf("---------------------------\n");
+            printf("Quantidade alterada!\n");
             return;
         }
         atual = atual->proximo;
     }
-    printf("Produto nao encontrado!!\n");
+    printf("---------------------------\n");
+    printf("Produto nao encontrado!\n");
 }
 void esvaziar_lista(lista_dupla *lista){
     No *atual = lista->inicio;
